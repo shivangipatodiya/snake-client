@@ -16,6 +16,9 @@ const handleUserInput = (data) => {
   if (data === "d") {
     connection.write('Move: right')
   }
+  if (data === "z") {
+    connection.write("Say: Oops")
+  }
 }
 const setupInput = function (connVar) {
   connection = connVar
